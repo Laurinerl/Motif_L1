@@ -14,6 +14,7 @@ Work done during the internship from  01/02/2021 to 30/07/2021
 
 - A human reference genome sequence : hg38.fa
 - Annotation file : gencode.v37.annotation.gtf
+- Chromosomes size : hg38.chrom.sizes
 
 They are contained in the file hg38_files_used
 
