@@ -45,11 +45,11 @@ The file "R_table.md" details the command lines used to generate these comparati
 
 The file "deeptools.md" details the command lines used to generate these comparative graphs with deeptools
 
-### Python program 
+## Python program 
 
-Four python programs have been created:
+Five python programs have been created:
 
-- creation_PWM.py</li
+- creation_PWM.py
 
 Allows to generate frequency matrices. It takes as input :
 	- a bed file which contains the positions of the motifs 
@@ -78,3 +78,5 @@ Allows to put annotation files in the form of a table, the informations are sepa
 - position.chr.py
 
 Returns a bed file containing the positions of all N in the file
+
+> The folder named "Files" regroups the files obtained 
