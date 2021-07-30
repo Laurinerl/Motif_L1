@@ -15,9 +15,35 @@ Work done during the internship from  01/02/2021 to 30/07/2021
 - A human reference genome sequence : hg38.fa
 - Annotation file : gencode.v37.annotation.gtf
 
+They are contained in the file hg38_files_used
+
 ## Usage 
 
 The commands lines made are detailed in the folder "Commands". 
+
+### 1. Generate a file presenting the positions and scores of L1 motifs across the human genome 
+
+The file "File filtration.md" details how to find the positions of the motifs that match the L1 motif frequency matrix on the human genome. 
+
+Python programs creation_PWM.py and score_PWM.py are used here to find the frequency matrix of the L1 motif and make some controls
+
+### 2. Filtration of the annotation file
+
+The file "File filtration.md" details how the annotation file was filtered.
+
+	- Intergenic and intronic regions were identified
+	- Tables that will be imported into R are created 
+	- Annotation files that will be used with deepTools are created 
+
+Python programs filtration.annotation.file.py, creation.table.py and position.chr.py are used here.
+
+### 3. Generation of graphs comparing L1 motif density between regions (gene/intergenic, intron/exon)
+
+The file "R_table.md" details the command lines used to generate these comparative graphs on R
+
+### 4. Generation of graphs comparing the density of L1 patterns at borders in different regions (gene/intergenic, intron/exon)
+
+The file "deeptools.md" details the command lines used to generate these comparative graphs with deeptools
 
 ### Python program 
 
@@ -39,13 +65,11 @@ Allows to calculate the score of the motifs of a bed file from a motif matrix. I
 
 - filtration.annotation.file.py 
 
-Filtration of annotation files according to the annotation level
+Filtration of annotation files according to the annotation level and according to the gene type and transcript type (protein_coding, lncRNA...)
 
 >level 1 (verified loci)
 >level 2 (manually annotated loci)
 >level 3 (automatically annotated loci)
-
-and according to the gene type and transcript type (protein_coding, lncRNA...)
 
 - creation.table.py 
 
