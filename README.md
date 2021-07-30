@@ -3,7 +3,7 @@ Work done during the internship from  01/02/2021 to 30/07/2021
 
 ## Installation
 
-### Dependencied 
+### Dependencies 
 
 - bedtools (v2.30.0)
 - homer (v4.11)
