@@ -79,4 +79,6 @@ Allows to put annotation files in the form of a table, the informations are sepa
 
 Returns a bed file containing the positions of all N in the file
 
-> The folder named "Files" regroups the files obtained 
+## Other comments
+
+The folder named "Files" regroups the files obtained 
